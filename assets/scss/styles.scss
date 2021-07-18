@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.search-box {
+    transition: box-shadow 0.2s  linear;
+}
+
+.nav_link {
+    @apply ml-6 border-b-2 border-white hover:border-gray-600 h-full flex items-center;
+    a {
+        @apply py-10 px-5;
+    }
+}
+
+.btn {
+    @apply text-center rounded-sm py-5 font-light text-lg;
+}
