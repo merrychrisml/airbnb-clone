@@ -39,7 +39,7 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
 ]
 
-THIRD_PARTY_APPS = ["django-countries", "django_seed"]
+THIRD_PARTY_APPS = ["django_countries", "django_seed"]
 
 PROJECT_APPS = [
     "core.apps.CoreConfig",
@@ -51,7 +51,7 @@ PROJECT_APPS = [
     "conversations.apps.ConversationsConfig",
 ]
 
-INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -151,3 +151,7 @@ EMAIL_FROM = "test-verify@sandboxdd81b7152a3b444daef2c0bf8b163a3c.mailgun.org"
 
 # Auth
 LOGIN_URL = "/user/login/"
+
+# Locale
+
+LOCALE_PATHS = (os.path.join(BASE_DIR, "locale"),)
