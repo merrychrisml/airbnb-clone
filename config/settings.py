@@ -25,7 +25,7 @@ SECRET_KEY = "^z$!=6xa7z=om=)htmd#0dj$9+742sejj*p&#x&dah901=*qut"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = "*"
+ALLOWED_HOSTS = "songbnb.eba-mpwjgsd6.ap-northeast-2.elasticbeanstalk.com"
 
 
 # Application definition
