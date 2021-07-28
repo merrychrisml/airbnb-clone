@@ -4,15 +4,17 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==2.2.5"
-flake8 = "*"
-pillow = "*"
-django-countries = "*"
-django-seed = "*"
+pathspec = "*"
+django = "*"
 django-dotenv = "*"
+django-countries = "*"
+pillow = "*"
+django-seed = "*"
 requests = "*"
+django-storages = "*"
 
 [dev-packages]
+awsebcli = "*"
 flake8 = "*"
 black = "*"
 
