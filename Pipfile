@@ -13,6 +13,7 @@ requests = "*"
 django-storages = "*"
 django = "==2.2.5"
 pipenv-to-requirements = "*"
+psycopg2 = "*"
 
 [dev-packages]
 awsebcli = "*"
