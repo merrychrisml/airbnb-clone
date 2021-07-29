@@ -5,20 +5,16 @@ name = "pypi"
 
 [packages]
 pathspec = "*"
+django = "*"
 django-dotenv = "*"
 django-countries = "*"
-pillow = "*"
 django-seed = "*"
+pillow = "*"
 requests = "*"
-django-storages = "*"
-django = "==2.2.5"
-pipenv-to-requirements = "*"
-psycopg2 = "*"
 
 [dev-packages]
-awsebcli = "*"
-flake8 = "*"
 black = "*"
+flake8 = "*"
 
 [requires]
 python_version = "3.8"
