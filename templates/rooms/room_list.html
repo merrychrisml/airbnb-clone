@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-
+{% load static %}
 {% block page_title %}
     Welcome to Songbnb
 {% endblock page_title %}
@@ -9,7 +9,7 @@
 
     <div class="container mx-auto w-11/12 pb-10">
         
-        <div class="rounded-xl bg-gray-800 h-50vh mt-32 mb-24 bg-cover bg-center" style="background-image:url(https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=708&q=80)">
+        <div class="rounded-xl bg-gray-800 h-50vh mt-32 mb-24 bg-cover bg-center" style="background-image:url({% static 'img/bg.jpeg' %});"></div>
         <div class="flexbox font-bold h-4/5 w-full text-white text-center mx-auto justify-items-center grid items-center text-5xl">Welcome to Songbnb! Enjoy Your Trip.</div>
         </div>
         <div class="flex flex-wrap mb-16">
