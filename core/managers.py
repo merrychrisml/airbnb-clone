@@ -12,3 +12,4 @@ class CustomModelManager(models.Manager):
 
 class CustomUserManager(CustomModelManager, UserManager):
     pass
+
