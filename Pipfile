@@ -14,6 +14,7 @@ requests = "*"
 psycopg2 = "*"
 django-storages = "*"
 boto3 = "*"
+sentry-sdk = "*"
 
 [dev-packages]
 black = "*"
