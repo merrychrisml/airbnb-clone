@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("DJANGO_SECRET", "NTfF6fEHnYx^P6@HJx@K6M")
+SECRET_KEY = os.environ.get("DJANGOSECRET", "NTfF6fEHnYx^P6@HJx@K6M")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(os.environ.get("DEBUG"))
@@ -102,10 +102,10 @@ else:
     DATABASES = {
         "default": {
             "ENGINE": "django.db.backends.postgresql",
-            "HOST": os.environ.get("RDS_HOST"),
-            "NAME": os.environ.get("RDS_NAME"),
-            "USER": os.environ.get("RDS_USER"),
-            "PASSWORD": os.environ.get("RDS_PASSWORD"),
+            "HOST": os.environ.get("RDSHOST"),
+            "NAME": os.environ.get("RDSNAME"),
+            "USER": os.environ.get("RDSUSER"),
+            "PASSWORD": os.environ.get("RDSPASSWORD"),
             "PORT": "5432",
         }
     }
@@ -188,7 +188,7 @@ if not DEBUG:
     STATIC_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/static/"
 
     sentry_sdk.init(
-        dsn=os.environ.get("SENTRY_URL"),
+        dsn=os.environ.get("SENTRYURL"),
         integrations=[DjangoIntegration()],
         traces_sample_rate=1.0,
         send_default_pii=True,
